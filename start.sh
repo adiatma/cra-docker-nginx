@@ -22,7 +22,7 @@ exec_docker() {
 }
 
 init() {
-  if [[ ! -n "./web" ]]; then
+  if [[ ! -d "./web" ]]; then
     download_react_app
   fi
   
